@@ -1,0 +1,33 @@
+name: Feature request
+description: Propose a focused improvement with a concrete workflow.
+title: "feature: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Workflow and problem
+      description: Describe the real workflow and current obstacle.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+    validations:
+      required: true
+  - type: dropdown
+    id: component
+    attributes:
+      label: Owning component
+      options:
+        - iPhone App
+        - Mobile Web / Gateway
+        - Relay / Run Server
+        - Mac Agent
+        - Admin Platform
+        - Runtime Distribution / Homebrew
+        - Documentation
+        - Unsure
+    validations:
+      required: true

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Installation support
+    url: https://github.com/codex-remote/homebrew-tap/issues
+    about: Ask about installation, setup, pairing, upgrades, and uninstall behavior.
+  - name: Security report
+    url: https://github.com/codex-remote/homebrew-tap/security/advisories/new
+    about: Report suspected vulnerabilities privately.
