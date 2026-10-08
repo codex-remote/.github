@@ -1,6 +1,14 @@
 # Codex Remote
 
-Use your phone as a remote workbench for Codex running on your Mac.
+**Use your phone as a remote workbench for Codex running on your Mac.**
+
+[Product home](https://github.com/codex-remote/codex-remote) |
+[Quick start](https://github.com/codex-remote/codex-remote#quick-start) |
+[Source code](https://github.com/codex-remote/codex-remote#source-code) |
+[Roadmap](https://github.com/codex-remote/codex-remote/blob/main/ROADMAP.md) |
+[Releases](https://github.com/codex-remote/homebrew-tap/releases)
+
+![Codex Remote product preview](https://raw.githubusercontent.com/codex-remote/codex-remote/main/assets/social-preview.png)
 
 Codex Remote is an independent open-source project. It is not affiliated with
 or endorsed by OpenAI. Codex and OpenAI are trademarks of their respective
@@ -10,6 +18,20 @@ owners.
 > Codex Remote is pre-release software. The current public Beta is limited to
 > Apple Silicon Macs and same-network iPhone Safari access. It is unsigned,
 > not Apple notarized, and must not be exposed directly to the public internet.
+
+## Try the current Beta
+
+```bash
+brew trust --formula codex-remote/tap/codex-remote
+brew install codex-remote/tap/codex-remote
+codex-remote setup --workspace-root ~/work
+codex-remote pair
+```
+
+The terminal displays a one-time QR code. Scan it with iPhone Safari, choose a
+project and session, and continue working while Codex and project files stay on
+your Mac. Read the [security and network limitations](https://github.com/codex-remote/codex-remote#requirements)
+before installing.
 
 ## Architecture
 
@@ -41,20 +63,9 @@ and release-manifest contracts rather than shared source imports.
 | [mac-agent](https://github.com/codex-remote/mac-agent) | Local Codex execution and workspace adapter |
 | [admin-platform](https://github.com/codex-remote/admin-platform) | Diagnostics server, collector, and admin UI |
 | [runtime-distribution](https://github.com/codex-remote/runtime-distribution) | Runtime CLI, supervisor, assembly, and release checks |
+| [codex-remote](https://github.com/codex-remote/codex-remote) | Product home, quick start, screenshots, source map, and roadmap |
 | [homebrew-tap](https://github.com/codex-remote/homebrew-tap) | Homebrew installation and public Runtime releases |
 | [docs](https://github.com/codex-remote/docs) | Product, architecture, protocol, ADR, and release documentation |
-
-## Install the current Beta
-
-```bash
-brew trust --formula codex-remote/tap/codex-remote
-brew install codex-remote/tap/codex-remote
-codex-remote setup --workspace-root ~/work
-codex-remote pair
-```
-
-Read the [installation guide](https://github.com/codex-remote/homebrew-tap#quick-start)
-and its security limitations before installing.
 
 ## Contributing and security
 
