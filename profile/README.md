@@ -8,16 +8,17 @@
 [Roadmap](https://github.com/codex-remote/codex-remote/blob/main/ROADMAP.md) |
 [Releases](https://github.com/codex-remote/homebrew-tap/releases)
 
-![Codex Remote product preview](https://raw.githubusercontent.com/codex-remote/codex-remote/main/assets/social-preview.png)
+![Codex Remote product preview](https://raw.githubusercontent.com/codex-remote/codex-remote/main/assets/social-preview-v2.png)
 
 Codex Remote is an independent open-source project. It is not affiliated with
 or endorsed by OpenAI. Codex and OpenAI are trademarks of their respective
 owners.
 
 > [!WARNING]
-> Codex Remote is pre-release software. The current public Beta is limited to
-> Apple Silicon Macs and same-network iPhone Safari access. It is unsigned,
-> not Apple notarized, and must not be exposed directly to the public internet.
+> Codex Remote is pre-release software. The current public Beta is for Apple
+> Silicon Macs and iPhone Safari. Use the same trusted Wi-Fi nearby, or a
+> private Tailscale network when away. It is unsigned, not Apple notarized,
+> and must not be exposed directly to the public internet.
 
 ## Try the current Beta
 
@@ -27,6 +28,9 @@ brew install codex-remote/tap/codex-remote
 codex-remote setup --workspace-root ~/work
 codex-remote pair
 ```
+
+For private remote access, install Tailscale on the Mac and iPhone, sign in to
+the same Personal tailnet, and follow the [remote access guide](https://github.com/codex-remote/codex-remote/blob/main/docs/private-remote-access.md).
 
 The terminal displays a one-time QR code. Scan it with iPhone Safari, choose a
 project and session, and continue working while Codex and project files stay on
